@@ -11,14 +11,5 @@ public abstract class KFBEmployee {
     int year;
     int month;
     int day;
-    KFBEmployee(){
 
-    }
-    KFBEmployee(String name,int year,int month,int day){
-        this.name = name;
-        this.day = day;
-        this.month = month;
-        this.year = year;
-    }
-    abstract double getSalary(int month);
 }

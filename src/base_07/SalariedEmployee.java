@@ -7,23 +7,23 @@ package base_07;
  **/
 public class SalariedEmployee extends KFBEmployee {
 
-    double salary;
-
-    SalariedEmployee(){
-
-    }
-
-    SalariedEmployee(String name,int year,int month,int day,double salary){
-        super(name, year, month, day);
-        this.salary =salary;
-    }
-    @Override
-    double getSalary(int month) {
-
-        if(month == this.month){
-            salary +=100;
-        }
-        return salary;
-    }
+//    double salary;
+//
+//    SalariedEmployee(){
+//
+//    }
+//
+//    SalariedEmployee(String name,int year,int month,int day,double salary){
+//        super(name, year, month, day);
+//        this.salary =salary;
+//    }
+//    @Override
+//    double getSalary(int month) {
+//
+//        if(month == this.month){
+//            salary +=100;
+//        }
+//        return salary;
+//    }
 
 }
