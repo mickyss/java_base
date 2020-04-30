@@ -53,5 +53,21 @@ public class Demo02 {
             value = (String) entry.getValue();
             System.out.println("key:" + key + "---" + "value:" + value);
         }
+
+        // 键和值
+        // 获取键集合的迭代器
+        Iterator it3 = map.keySet().iterator();
+        while (it3.hasNext()) {
+            key = (Integer) it3.next();
+            value = (String) map.get(key);
+            System.out.println("key:" + key + "---" + "value:" + value);
+        }
+
+
+        Iterator i4 = map.values().iterator();
+        while (i4.hasNext()) {
+            value = (String) i4.next();
+            System.out.println("value:" + value);
+        }
     }
 }
