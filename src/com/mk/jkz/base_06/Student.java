@@ -1,4 +1,6 @@
-package base_06;
+package com.mk.jkz.base_06;
+
+import org.omg.PortableInterceptor.INACTIVE;
 
 /**
  * @Author yanyc
@@ -13,13 +15,10 @@ public class Student {
 
     private String userWeight;
 
-    private String score;
+    private Integer score;
 
 
 
-    public static void clean(){
-        System.out.println("扫得非常干净");
-    }
 
     public String getUserName() {
         return userName;
@@ -45,11 +44,11 @@ public class Student {
         this.userWeight = userWeight;
     }
 
-    public String getScore() {
+    public Integer getScore() {
         return score;
     }
 
-    public void setScore(String score) {
+    public void setScore(Integer score) {
         this.score = score;
     }
 }

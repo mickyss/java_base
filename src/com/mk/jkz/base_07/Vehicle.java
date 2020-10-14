@@ -1,4 +1,4 @@
-package base_07;
+package com.mk.jkz.base_07;
 
 /**
  * 请定义一个交通工具(Vehicle)的类，其中有:

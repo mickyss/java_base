@@ -1,5 +1,4 @@
-package base_07;
-
+package com.mk.jkz.base_07;
 /**
  * @Author yanyc
  * @Description //TODO $

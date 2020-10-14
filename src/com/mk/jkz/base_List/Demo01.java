@@ -1,4 +1,4 @@
-package base_List;
+package com.mk.jkz.base_List;
 
 import java.util.ArrayList;
 import java.util.Random;

@@ -1,4 +1,4 @@
-package base_06;
+package com.mk.jkz.base_06;
 
 /**
  * @Author yanyc

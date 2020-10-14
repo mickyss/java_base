@@ -1,4 +1,4 @@
-package base_05;
+package com.mk.jkz.base_05;
 
 import java.util.Random;
 
