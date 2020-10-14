@@ -1,4 +1,4 @@
-package base02;
+package com.mk.jkb.base02;
 
 import java.util.Scanner;
 
