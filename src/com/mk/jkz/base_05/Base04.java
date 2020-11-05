@@ -32,32 +32,35 @@ public class Base04 {
 
     public static void main(String[] args) {
 
-        System.out.println("--------随机点名器--------");
         // 创建一个存储多个同学名字的容器（数组）
         String[] students = new String[3];
-        //录入学生信息方法
-        addStudentName(students);
-
-        //.获取随机点名到的学生姓名，并打印
-        String randomName = randomStudentName(students);
-        System.out.println("被点到名的同学是 :" + randomName);
-
+        //调用录入学生的方法
+        addStudents(students);
+        //随机点名
+        int index = getRandom();
+        System.out.println("学生" + students[index]);
+        
     }
-    public static void addStudentName(String[] students) {
-        //键盘输入多个同学名字存储到容器中
-        Scanner sc = new Scanner(System.in);
-        for (int i = 0; i < students.length; i++) {
-            System.out.println("存储第" + i + "个名称：");
-            students[i] = sc.next();
+    
+    public static int getRandom() {
+        Random r = new Random();
+        int index = r.nextInt(3);
+        System.out.println("随机数" + index);
+        return index;
+    }
+    
+	//从键盘录入学生信息
+	public static void addStudents(String[] students) {
+		Scanner sc = new Scanner(System.in);
+        System.out.println("请录入3个学生姓名");
+        for(int i=0;i<students.length;i++) {
+        	students[i] = sc.next();	
+        	if((i+1) != students.length) {
+        		System.out.println("请继续录入");	
+        	}
         }
-    }
-
-    public static String randomStudentName(String[] students) {
-        //根据数组长度，获取随机索引
-        int index = new Random().nextInt(students.length);
-        //通过随机索引从数组中获取名称
-        String name = students[index];
-        //返回随机点到的名称
-        return name;
-    }
+	        
+	}
+    
+   
 }

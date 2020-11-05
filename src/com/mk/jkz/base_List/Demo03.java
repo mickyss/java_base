@@ -11,7 +11,7 @@ import java.util.*;
 public class Demo03 {
     public static void main(String[] args) {
         //定义一个String类型的List集合,用来存储题目给定的字符串
-        List<String> list = new ArrayList<>();
+        List<String> list = new ArrayList<String>();
         list.add("abc");
         list.add("bcd");
         //将集合中的两个元素进行拼接,调用method1(String str) 进行统计,筛选.
